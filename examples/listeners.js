@@ -42,3 +42,7 @@ hub.on('data.weather', function (sid, temperature, humidity, pressure) {
     console.info('th', sid, temperature, humidity, pressure);
 });
 
+hub.on('data.smoke', function (sid, voltage, density, alarm) {
+    console.info('smokedetector', sid, voltage, density, alarm);
+});    
+
